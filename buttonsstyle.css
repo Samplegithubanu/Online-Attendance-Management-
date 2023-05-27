@@ -1,0 +1,14 @@
+/* CSS Document */
+
+.button{
+height:40px;
+width:auto;
+background-image:linear-gradient(red,black);
+color:#FFFFFF;
+font-weight:bold;
+border-radius:20px;
+
+}
+.button:hover{
+background-image:linear-gradient(black,red);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.style2 {
+	color: #000066;
+	font-size: 36px;
+}
+.style3 {
+	color: #000000;
+	font-weight: bold;
+}
+-->
+</style>
+
+<script >
+function validate(){
+var x=document.forms["form1"]["username"].value;
+var y=document.forms["form1"]["password"].value;
+
+if(x==""){
+alert("username cannot be blank");
+return false;
+}else if(y==""){
+alert("password cannot be blank");
+return false;
+}else{
+return true;
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+<div align="center" class="style1">
+  <p>&nbsp;</p>
+  <p class="style2">Student Quick Info </p>
+  <p>&nbsp;</p>
+  <p>Faculty Login Page</p>
+</div>
+<form id="form1" name="form1" method="post" action="facultylogin.jsp">
+<div style="background-color:#CACACA;margin-left:25%; margin-right:25%">
+  <p>&nbsp;</p>
+  <table width="540" border="1" align="center" cellpadding="5">
+    <tr>
+      <td width="210">
+        <div align="right"><span class="style3">Enter Username </span></div></td>
+      <td width="298"><input name="username" type="text" size="40" /></td>
+    </tr>
+    <tr>
+      <td><div align="right"><span class="style3">Enter Password </span></div></td>
+      <td><input name="password" type="password" size="40" /></td>
+    </tr>
+    <tr>
+      <td><div align="right"></div></td>
+      <td><input type="submit" name="Submit" value="Login" onclick="return validate()"/>
+      <input type="reset" name="Submit2" value="Reset" /></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</div>
+  <div align="center"></div>
+</form>
+<p align="center"><a href="parents.jsp"></a></p>
+<p align="center"><a href="login.html">Back</a></p>
+<p>&nbsp;</p>
+</body>
+</html>
